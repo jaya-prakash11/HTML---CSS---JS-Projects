@@ -1,0 +1,141 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+.active {
+  display: flex !important;
+}
+
+.correct-answer {
+  background-color: green !important;
+}
+.incorrect-answer {
+  background-color: red !important;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+
+.quiz-container {
+  display: flex;
+  width: 500px;
+  height: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+.start-container {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15%;
+}
+
+.start-container h1 {
+  color: orange;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.start-container p {
+  color: gray;
+  font-size: large;
+}
+
+button {
+  height: 40px;
+  width: 90px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.test-conatiner {
+  display: none;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 6%;
+}
+
+.question-score {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: gray;
+}
+
+.option-container {
+  display: flex;
+  flex-direction: column;
+  height: 456px;
+  width: 100%;
+  gap: 4%;
+  margin-top: 1px;
+}
+
+.options {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: azure;
+  align-items: center;
+  border: 1px solid orange;
+  border-radius: 10px;
+  color: gray;
+  padding: 20px;
+}
+
+.progress-conatiner {
+  display: flex;
+  width: 100%;
+  height: 11px;
+  background-color: black;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.progress-bar {
+  display: flex;
+  height: 9px;
+  width: 0%;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.result-container {
+  display: none;
+  height: 100%;
+  width: 100vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 15%;
+}
+
+.score-board {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid black;
+  width: 90%;
+  height: 40%;
+  border-radius: 5px;
+  gap: 5%;
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+}

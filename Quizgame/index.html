@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz-container">
+        <div id="start-screen" class="start-container active">
+          <h1>Quiz Time!</h1>
+          <p>Text Your Knowledge with these fun question</p>
+          <button id="start-buttton">Start Quiz</button>
+        </div>
+        <div id="test-screen" class="test-conatiner">
+          <h1 id="question-title">Question</h1>
+          <div class="question-score">
+            <p id="questions-borad">
+              Questions <span id="current-question"></span> out of
+              <span id="total-questions"></span>
+            </p>
+
+            <p>Score: <span id="scoreKeeper"></span></p>
+          </div>
+          <div id="answer-conatiner" class="option-container">
+            <!-- <div class="options">ssds</div> -->
+          </div>
+          <div class="progress-conatiner">
+            <div id="progress-percentage" class="progress-bar"></div>
+          </div>
+        </div>
+        <div id="result-screen" class="result-container">
+          <h1>Quiz results</h1>
+          <div class="score-board">
+            <h3>
+              You scored <span id="sscoreKeeper"></span> out of
+              <span id="ttotal-questions"></span>
+            </h3>
+            <h2 id="review" class="remarks">Good effort keep trying</h2>
+          </div>
+          <button id="restart-button">Restart Quiz</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
