@@ -163,8 +163,8 @@ function selectAnswer(event) {
   buttonDisabled = true;
 
   let correct = event?.target?.dataset?.correct === "true";
-  //   console.log(event?.target?.dataset?.correct);
   Array.from(answercontainer.children).forEach((button) => {
+    // TODO know why we are using Array.from
     if (button.dataset.correct === "true") {
       console.log(button.dataset.correct);
       button.classList.add("correct-answer");
