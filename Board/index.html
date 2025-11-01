@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kanban Board</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="kanban-container">
+      <h1>Kanban Board</h1>
+      <div class="list-container">
+        <!--List 1-->
+        <div class="list" id="list1">
+          <h1 class="list-title">To Do</h1>
+          <div class="list-task" draggable="true" id="card1">
+            watering plants
+          </div>
+          <div class="list-task" draggable="true" id="card2">wash dishes</div>
+        </div>
+        <!--List 2-->
+        <div class="list" id="list2">
+          <h1 class="list-title">Doing</h1>
+          <div class="list-task" draggable="true" id="card3">dry cloths</div>
+        </div>
+        <!--List 3-->
+        <div class="list" id="list3">
+          <span class="list-title">Done</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
